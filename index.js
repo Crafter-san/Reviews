@@ -5,11 +5,11 @@ const CANVAS = document.getElementById("canvas");
 const CTX = CANVAS.getContext("2d");
 const MIDDLE = 260;
 const COLORS = {
-	Text: #E0EFDA,
-	Book: #37323e,
-	Movie: #ffa2aa,
-	Show: #FFAE03,
-	Song: #5296A5
+	Text: "#E0EFDA",
+	Book: "#37323e",
+	Movie: "#ffa2aa",
+	Show: "#FFAE03",
+	Song: "#5296A5"
 };
 const POPUPSIZE = {
 	w: 160,
