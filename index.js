@@ -5,7 +5,7 @@ const CANVAS = document.getElementById("canvas");
 const CTX = CANVAS.getContext("2d");
 const MIDDLE = 260;
 const COLORS = {
-	Text: "#E0EFDA",
+	Text: "#2bff00",//"#E0EFDA",
 	Book: "#37323e",
 	Movie: "#ffa2aa",
 	Show: "#FFAE03",
