@@ -234,7 +234,7 @@ function render(){
 		CTX.closePath();
 		CTX.stroke();
 		CTX.fill();
-		CTX.fillStyle = "black";
+		CTX.fillStyle = COLORS.Text;
 		//console.log(folders[`${MOUSE.realX}-${MOUSE.realY}`][0])
 		CTX.font = "12px arial"
 		
