@@ -226,8 +226,9 @@ function render(){
 		CTX.fill();
 	}
 	if (MOUSE.hovering) {
+		const POS = posdict[folders[`${MOUSE.realX}-${MOUSE.realY}`][posdict[`${MOUSE.realX}-${MOUSE.realY}`] || 0]];
 		CTX.beginPath();
-		CTX.fillStyle = "gray";
+		CTX.fillStyle = COLORS[POS.type];
 		CTX.strokeStyle = "gray";
 		CTX.rect(MOUSE.realX+(MOUSE.offsetX*POPUPSIZE.w), MOUSE.realY+(MOUSE.offsetY*POPUPSIZE.h), POPUPSIZE.w, POPUPSIZE.h);
 		CTX.closePath();
@@ -236,7 +237,7 @@ function render(){
 		CTX.fillStyle = "black";
 		//console.log(folders[`${MOUSE.realX}-${MOUSE.realY}`][0])
 		CTX.font = "12px arial"
-		const POS = posdict[folders[`${MOUSE.realX}-${MOUSE.realY}`][posdict[`${MOUSE.realX}-${MOUSE.realY}`] || 0]];
+		
 		CTX.fillText(POS.title, MOUSE.realX+(MOUSE.offsetX*POPUPSIZE.w)+5, MOUSE.realY+(MOUSE.offsetY*POPUPSIZE.h)+15, 130);
 		CTX.fillText(POS.type, MOUSE.realX+(MOUSE.offsetX*POPUPSIZE.w)+5, MOUSE.realY+(MOUSE.offsetY*POPUPSIZE.h)+27, 130);
 		CTX.fillText("Reaction: " + POS.reaction, MOUSE.realX+(MOUSE.offsetX*POPUPSIZE.w)+5, MOUSE.realY+(MOUSE.offsetY*POPUPSIZE.h)+39, 130);
