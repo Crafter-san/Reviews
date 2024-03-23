@@ -16,7 +16,7 @@ function reviewscale (n) {
 }
 
 const image = new Image();
-image.src="/image.jpg";
+image.src="image.jpg";
 class Snowflake {
 	constructor(worker, process, parse) {
 		this.worker = this.safeParse(worker || Math.floor(Math.random() * 32, 5));
